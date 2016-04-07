@@ -14,8 +14,12 @@ def tokenize_it():
 		tokens = user_input.split(" ")
 		if tokens[0] == "+":
 			print add(int(tokens[1]),int(tokens[2]))
-		if tokens[0] == "-":
+		elif tokens[0] == "-":
 			print subtract(int(tokens[1]),int(tokens[2]))
+		elif tokens[0] == "*":
+			print multiply(int(tokens[1]),int(tokens[2]))
+		elif tokens[0] == "/":
+			print divide(float(tokens[1]),float(tokens[2]))
 		elif tokens[0] == "pow":
 			print power(int(tokens[1]),int(tokens[2]))
 		elif tokens[0] == "q":
